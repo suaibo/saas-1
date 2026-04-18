@@ -21,6 +21,10 @@ else:
 # 预发布环境
 RUN_MODE = "STAGING"
 
+# 社区版预发布环境的 SaaS 应用挂载在 /stag--{APP_ID}/ 下，
+# 模板中的静态资源和页面链接需要带上这个前缀。
+BK_STATIC_URL = "/stag--" + APP_CODE
+
 # 只对预发布环境日志级别进行配置，可以在这里修改
 # from blueapps.conf.log import set_log_level # noqa
 # LOG_LEVEL = "ERROR"
