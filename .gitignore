@@ -1,0 +1,16 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略 node_modules 文件夹
+node_modules/
+
+# 忽略 IDE 的配置文件
+.vscode/
+.idea/
+
+# 忽略本地环境变量文件
+dev.env
+
+# 忽略编译产物
+dist/
+build/
